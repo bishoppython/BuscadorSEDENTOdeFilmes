@@ -16,7 +16,7 @@ function pesquisarFilmes(e){
 
 function buscarFilmes(filmePesquisa){
 //Neste GET nós fazemos a conexão com a API do OMBD, concatenando-a com a variavel que criamos lá em cima
-axios.get('http://www.omdbapi.com/?apikey=3b2a4cf8&s=' + filmePesquisa)
+axios.get('https://www.omdbapi.com/?apikey=3b2a4cf8&s=' + filmePesquisa)
 .then(function (response) {
   console.log(response);
   var filmes = response.data.Search; //criei um array para coleta dos dados da api
@@ -52,7 +52,7 @@ function filmeDetalhes(id){
 function mostraFilme(){
     var filmeID = sessionStorage.getItem('filmeID');
 
-    axios.get('http://www.omdbapi.com/?apikey=3b2a4cf8&i=' + filmeID)
+    axios.get('https://www.omdbapi.com/?apikey=3b2a4cf8&i=' + filmeID)
 .then(function (response) {
     var filme = response.data;
   console.log(filme);
