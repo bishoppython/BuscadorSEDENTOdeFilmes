@@ -6,11 +6,6 @@
 
 //Criei uma chamada para nosso formulario, acrescentando sua chamada na pesquisa quando for dado Enter ('submit'),
 //quando isso ocorrer irá fazer a chamada da nossa função pesquisar Filmes
-
-Adicione um arquivo chamado ao lado do seu index.html com o seguinte conteúdo:_headers
-
-/*
-  Access-Control-Allow-Origin: */
 document.getElementById('formulario').addEventListener('submit', pesquisarFilmes);
 
 function pesquisarFilmes(e){
